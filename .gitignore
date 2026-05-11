@@ -1,0 +1,564 @@
+# SolidWorks Backup and Temp Files
+*.sldprt~*
+*.sldasm~*
+*.slddrw~*
+*.swp
+*.bak
+*.tmp
+# SolidWorks PDM Cache
+swpdm/
+# Simulation Results
+*.cwr
+*.out
+*.fld
+# Toolbox and Libraries (if not shared)
+Toolbox/
+DesignLibrary/
+# OS-specific junk files
+DS_Store
+Thumbs.db
+
+
+# ================================
+# 嵌入式开发通用 gitignore 模板（中文详细注释版）
+# 支持: Keil/IAR/STM32Cube/Renesas/HDSC/GCC-ARM/PlatformIO等主流平台
+# 适用范围: ARM Cortex-M/RISC-V/8051等微控制器开发
+# ================================
+
+# ================================
+# 用户自定义忽略区域
+# ================================
+# 在此处添加项目特定的忽略规则，例如：
+#   - 私密配置文件（密钥、凭证等）
+#   - 大型测试数据文件
+#   - 特定工具生成的中间文件
+#   - 团队协作中的个人配置
+
+
+
+
+# ================================
+# 构建输出目录
+# ================================
+# Keil/IAR/GCC等工具链的默认构建输出目录，包含中间文件和最终固件
+build/
+Build/
+output/
+Output/
+# Keil默认对象文件目录
+Objects/
+# IAR默认对象文件目录
+Obj/
+# Keil默认汇编列表目录
+Listings/
+# IAR默认列表目录
+Lst/
+# 调试版本构建目录
+Debug/
+# 发布版本构建目录
+Release/
+# 分发目录
+dist/
+# 二进制文件目录
+bin/
+# CMake生成的目录
+*.dir/
+# 缓存目录
+.cache/
+
+# 通用编译产物（所有工具链通用）
+# 目标文件
+*.o
+# Windows风格目标文件
+*.obj
+# ARM可执行格式（包含调试信息）
+*.axf
+# 通用可执行文件格式
+*.elf
+# Intel HEX格式固件（常用于MCU烧录）
+*.hex
+# 原始二进制固件（无地址信息）
+*.bin
+# 通用输出文件
+*.out
+# 内存映射文件（符号地址、链接器信息）
+*.map
+# 汇编列表文件（反汇编代码）
+*.lst
+# 扩展汇编列表文件
+*.lss
+# 符号表文件（用于调试）
+*.sym
+# Motorola S-Record格式固件
+*.srec
+# S19格式固件（Motorola S-Record变体）
+*.s19
+# Motorola固件格式
+*.mot
+
+# 中间文件（所有工具链通用）
+# 依赖关系文件（编译器自动生成）
+*.d
+# 依赖关系文件（旧格式）
+*.dep
+# 交叉引用文件
+*.crf
+# 预处理后的C文件（宏展开）
+*.i
+# 预处理后的C++文件
+*.ii
+# 汇编中间文件
+*.s
+# 栈使用分析文件
+*.su
+# 备份文件
+*.bak
+# 临时文件
+*.tmp
+
+# Keil MDK-ARM 专有文件
+# 用户个性化配置文件（窗口布局、断点、监视变量等，本地化设置）
+# Keil MDK5用户选项文件（包含调试设置、窗口布局）
+*.uvoptx
+# Keil MDK4用户选项文件
+*.uvopt
+# Keil GUI布局文件（窗口位置、大小等，机器特定）
+*.uvguix.*
+# 旧版GUI布局文件
+*.uvgui.*
+
+# 项目文件（这些需要提交到版本控制）
+# Keil MDK5项目文件（重要！包含编译器设置、链接脚本、文件列表）
+!*.uvprojx
+# Keil MDK4项目文件
+!*.uvproj
+
+# Keil特有的构建和调试中间文件
+# 链接器命令文件（自动生成，记录链接器选项）
+*.lnp
+# 构建日志文件
+*.plg
+# 系统查看器描述文件
+*.scvd
+# 运行时环境配置文件
+*.rte
+# 源码浏览器文件（符号浏览信息）
+*.SBR
+# Keil生成的HTML报告文件（代码覆盖率、代码审查等）
+*.htm
+# 编译器预处理中间文件（宏展开后的文件）
+*.__i
+# 另一种预处理中间文件
+*._i
+# 多项目工作区文件（本地化）
+*.uvmpw
+
+# IAR Embedded Workbench 专有文件
+# IAR工作台配置文件
+*.ewt
+# IAR调试器配置文件
+*.ewd
+# IAR项目文件（有时需要提交）
+*.ewp
+# IAR工作区文件
+*.eww
+# IAR本地设置目录
+settings/
+# IAR宏变量路径的调试目录
+$PROJ_DIR$/Debug/
+# IAR宏变量路径的发布目录
+$PROJ_DIR$/Release/
+
+# STM32CubeMX / STM32CubeIDE 专有文件
+# STM32CubeMX工程文件的备份（.ioc文件本身需要提交）
+*.ioc.bak
+# STM32CubeMX元数据文件
+*.mxproject
+# CubeMX项目配置
+.mxproject
+# Eclipse设置目录（STM32CubeIDE基于Eclipse）
+.settings/
+# STM32CubeIDE工作区目录
+STM32CubeIDE/
+
+# TouchGFX GUI开发框架相关
+# TouchGFX构建输出
+TouchGFX/build/
+# TouchGFX自动生成的代码（可重新生成）
+TouchGFX/generated/
+
+# Renesas e² studio / CS+ 专有文件
+# Eclipse元数据目录（e² studio基于Eclipse）
+.metadata/
+# 远程调试临时文件
+RemoteSystemsTempFiles/
+
+# CS+ (CubeSuite+) IDE专有文件
+# 绝对路径文件
+*.abs
+# 编译中间文件
+*.poc
+# 自动生成的包含文件
+*.inc
+# 调试信息文件
+*.ipr
+# 可重定位文件
+*.org
+# 系统文件
+*.sys
+# CS+编译中间数据/调试缓存
+*.mtud
+# MCU Pack文件（自动下载，无需提交）
+*.pack
+# 调试配置文件
+.rlaunch
+
+# RL78 链接器和项目文件（VSCode开发环境）
+# 链接器命令文件（自动生成）
+*.clnk
+# 项目配置文件
+*.mtpj
+# 配置文件
+*.rcpe
+
+# 华大半导体（HDSC）专有文件
+# HDSC IDE项目文件（HD32系列MCU，如HC32F460、HC32L110等）
+# 用户个性化项目配置
+*.hdsproj.user
+# HDSC IDE工作区配置
+*.hdsc_workspace
+# HDSC项目元数据
+*.hproject
+# HDSC IDE生成目录
+HDSC_IDE/
+
+# HD32系列特定文件
+# HDSC特定的调试文件
+*.afx
+# HDSC特定的报告文件
+*.afr
+
+# GCC ARM 工具链专有文件
+# 静态库文件
+*.a
+
+# CMake 构建系统
+# CMake生成的构建文件目录
+CMakeFiles/
+# CMake缓存文件（包含配置信息）
+CMakeCache.txt
+# CMake安装脚本
+cmake_install.cmake
+# CMake生成的Makefile（不要手动编辑）
+Makefile
+# CMake生成的脚本文件
+*.cmake
+# 例外：CMakeLists.txt需要提交（这是源文件）
+!CMakeLists.txt
+# Clang工具链使用的编译命令数据库
+compile_commands.json
+
+# PlatformIO（开源嵌入式开发平台）
+# PlatformIO构建目录
+.pio/
+# PlatformIO环境目录（旧版）
+.pioenvs/
+# PlatformIO库依赖目录
+.piolibdeps/
+# Clang代码补全配置
+.clang_complete
+# GCC编译标志配置
+.gcc-flags.json
+
+# Segger Embedded Studio
+# Segger IDE用户配置文件
+*.emProject.user
+# Segger IDE会话文件
+*.emSession
+
+# NXP MCUXpresso IDE
+# MCUXpresso IDE工作区目录
+.mcuxpressoide*/
+
+# TI Code Composer Studio (CCS)
+# 德州仪器官方IDE，用于MSP430、MSP432、TM4C、CC系列MCU开发
+# CCS项目配置文件
+.ccsproject
+# Eclipse C/C++项目配置
+.cproject
+# Eclipse项目文件
+.project
+# 项目规格文件
+*.projectspec
+# 目标配置目录（调试器配置）
+targetConfigs/
+# 调试版本输出目录
+Debug_*/
+# 发布版本输出目录
+Release_*/
+# XDS调试器配置文件
+*.xds
+# 目标配置XML文件
+*.ccxml
+
+# Microchip MPLAB X / Microchip Studio
+# Microchip官方IDE，用于PIC、AVR、SAM系列MCU开发
+# 自动生成的文件目录
+.generated_files/
+# NetBeans私有配置目录
+nbproject/private/
+# 打包脚本
+nbproject/Package-*.bash
+# 自动生成的Makefile
+nbproject/Makefile-*.mk
+# MPLAB X分发目录
+*.X/dist/
+# MPLAB Code Configurator 3配置
+*.mc3
+# MPLAB 8项目文件
+*.mcp
+# MPLAB 8工作区文件
+*.mcw
+
+# Infineon DAVE / ModusToolbox
+# 英飞凌官方IDE，用于XMC、PSoC、AURIX系列MCU开发
+# ModusToolbox启动配置
+.mtbLaunchConfigs/
+# ModusToolbox共享库目录
+mtb_shared/
+# 构建输出目录
+build/
+# 库文件目录
+libs/
+# PSoC Creator设计目录
+*.cydsn/
+# PSoC Creator项目文件
+*.cyprj.*
+# PSoC Creator工作区文件
+*.cywrk.*
+
+# Nordic nRF Connect SDK
+# Nordic官方开发工具，用于nRF52/53/91系列蓝牙/物联网MCU
+# nRF Connect配置目录
+.nrfconnect/
+# West构建系统配置
+.west/
+# Zephyr测试框架输出
+twister-out/
+# 健全性检查输出
+sanitycheck/
+# Zephyr内核配置
+zephyr/.config
+
+# Espressif ESP-IDF
+# 乐鑫官方开发框架，用于ESP32、ESP8266系列WiFi/蓝牙MCU
+# SDK配置备份文件
+sdkconfig.old
+# SDK默认配置
+sdkconfig.defaults
+# ESP-IDF工具链目录
+*.espressif/
+# 托管组件目录
+managed_components/
+
+# Silicon Labs Simplicity Studio
+# 芯科科技官方IDE，用于EFM32、EFR32系列MCU
+# Simplicity项目配置
+.SPC/
+# Simplicity项目文件
+.slcp
+# Simplicity项目构建文件
+*.slpb
+# Simplicity项目设置
+*.slps
+# 自动生成代码目录
+autogen/
+# Gecko SDK目录
+gecko_sdk*/
+
+# 国产工具链
+# MounRiver Studio（沁恒WCH官方IDE，用于CH32系列）
+# MounRiver项目配置目录
+.MounRiver_project/
+
+# RT-Thread Studio（睿赛德RTOS开发环境）
+# RT-Thread Studio配置目录
+.rttstudio/
+# RT-Thread配置头文件（自动生成）
+rtconfig.h
+
+# EIDE（VSCode插件，Embedded IDE）
+# EIDE项目配置目录
+.eide/
+# EIDE用户上下文配置
+.eide.usr.ctx.json
+
+# 新唐科技Nuvoton（M0/M4系列MCU）
+# Nuvoton IDE用户配置
+*.nuproj.user
+# Nuvoton IDE生成目录
+NuvotonIDE/
+
+# 灵动微电子MindMotion（MM32系列MCU）
+# MindMotion IDE用户配置
+*.mmproj.user
+# MindMotion IDE生成目录
+MindMotion_IDE/
+
+# 航顺芯片（HK32系列MCU）
+# HK32 IDE用户配置
+*.hkproj.user
+
+# 先楫半导体HPMicro（HPM系列RISC-V MCU）
+# HPM SDK缓存目录
+*.hpm_sdk/
+# HPM构建输出目录
+hpm_build/
+
+# 博流智能Bouffalo Lab（BL系列RISC-V MCU）
+# Bouffalo Lab IDE用户配置
+*.blproj.user
+# Bouffalo SDK构建目录
+bouffalo_sdk/build/
+
+# 调试器配置文件
+# 调试脚本配置（可能包含硬件相关设置，本地化）
+*.ini
+# J-Link调试脚本（有时需要提交共享的调试配置）
+*.jlink
+# 系统视图描述（外设寄存器描述文件，有时随IDE下载）
+*.svd
+# 跟踪追踪配置文件
+*.tracespec
+# 调试器数据库
+*.cdb
+# 通用数据库文件
+*.db
+# 调试信息文件
+*.dbg
+# J-Link调试日志
+JLinkLog.txt
+# J-Link配置文件
+JLinkSettings.ini
+
+# IDE自动生成文件（多种IDE通用）
+# Visual Studio Code配置目录
+# VSCode配置目录（settings.json/launch.json等）
+.vscode/
+
+# JetBrains IDE配置目录
+# JetBrains IDE配置目录（CLion/IntelliJ等）
+.idea/
+
+# Visual Studio配置目录
+# Visual Studio配置目录
+.vs/
+
+# Eclipse配置文件（e² studio、STM32CubeIDE等基于Eclipse）
+# Eclipse C/C++项目配置（根据需求可能需要提交）
+.cproject
+# Eclipse项目文件（根据需求可能需要提交）
+.project
+# Eclipse启动配置文件（调试器配置，本地化）
+*.launch
+
+# 通用用户配置文件
+# VSCode工作区文件
+*.code-workspace
+# 用户个性化配置文件（多种IDE通用）
+*.user
+# Visual Studio用户选项文件
+*.suo
+# Visual Studio智能感知数据库
+*.sdf
+*.opensdf
+# Visual Studio数据库
+*.VC.db
+
+# 编辑器临时文件
+# Linux/Unix编辑器备份文件（vim/emacs）
+*~
+# Vim交换文件（编辑会话期间）
+*.swp
+# Vim交换文件（备份）
+*.swo
+# 通配符匹配的备份文件
+*.~*
+
+# 操作系统文件
+# macOS Finder元数据文件
+.DS_Store
+# Windows缩略图缓存
+Thumbs.db
+# Windows文件夹配置（自定义图标、排序等）
+desktop.ini
+# macOS Spotlight索引
+.Spotlight-V100
+# macOS回收站
+.Trashes
+# Windows缩略图缓存（加密版本）
+ehthumbs.db
+
+# 版本控制辅助工具和AI编程助手
+# 代码历史记录和备份插件（VSCode/JetBrains等）
+# VSCode Local History插件生成的历史记录，记录文件的修改历史
+.history/
+# Local History插件备用格式目录
+.lh/
+# 部分编辑器的历史记录目录
+__history/
+# VSCode工作区历史记录
+.code-workspace-history/
+
+# AI编程助手工具生成的配置文件（不建议提交，包含个人习惯和API密钥）
+# Claude Code AI编程助手配置目录（包含会话历史、个性化设置等）
+.claude/
+# GitHub Copilot缓存和配置目录（微软官方AI助手）
+.copilot/
+# Cursor AI编辑器配置目录（包含AI会话、个人偏好等）
+.cursor/
+# Continue.dev AI编程助手配置（开源AI编程工具）
+.continue/
+# TabNine AI代码补全工具配置和缓存
+.tabnine/
+# Codeium AI编程助手配置（免费AI工具）
+.codeium/
+# Windsurf AI编程助手配置
+.windsurf/
+# Aider AI编程助手配置（命令行AI工具）
+.aider/
+# Mentat AI编程助手配置
+.mentat/
+# Sourcegraph Cody AI助手配置
+.sourcegraph/
+# Bito AI编程助手配置
+.bito/
+# DevPilot AI编程助手配置（百度出品）
+.devpilot/
+# Amazon Q Developer AI助手配置（AWS出品）
+.amazon-q/
+# Supermaven AI代码补全工具配置
+.supermaven/
+
+# 日志和报告文件
+# 通用日志文件（构建日志、调试日志等）
+*.log
+# Keil/ARMCC自动生成的批处理脚本
+*.BAT
+
+# 其他工具和配置
+# Clang代码格式化配置（根据团队规范决定是否提交）
+.clang-format
+# Clang静态分析配置
+.clang-tidy
+# Ctags符号索引文件
+tags
+# Etags符号索引文件
+TAGS
+# Cscope代码浏览工具索引文件
+cscope.*
+
+
+
+# 汇编源文件、源码文件和必要工程文件除外，其他产物均忽略
+
